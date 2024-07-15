@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geofencing Web App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5">Geofencing Web App</h1>
+    <!-- <input id="pac-input" class="controls" type="text" placeholder="Search Box"> -->
+    <button id="remove-circle" class="btn btn-danger">Remove Last Circle</button>
+    <div id="map"></div>
+    <div class="notification" id="notification">Notification</div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-messaging.js"></script>
+  
+  <!-- Replace YOUR_GOOGLE_MAPS_API_KEY with your actual API key -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?Fbj3PHnZa7OgJZgM5zh80EX3XHmsxoAV&libraries=geometry,drawing,places&callback=initMap"></script>
+  
+  <script src="app.js"></script>
+</body>
+</html>
